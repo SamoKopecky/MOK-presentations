@@ -275,4 +275,5 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
-*-presentation.pdf
+code-presentation.pdf
+paper-presentation.pdf
