@@ -70,11 +70,44 @@
 \maketitle
 
 
-\begin{frame} 
-	\frametitle{Intro}
+\begin{frame}[c]
+	\frametitle{Introduction}
+	\large{
+		\begin{itemize}
+			\item Implementation of the \textbf{Lattice-based one-time Linkable Ring Signature} (L2RS) Scheme
+			\item Implementation of a demo application using simple networking
+			\item Implemented purely in \textbf{Python} using only the \texttt{numpy} library
+			\item MOK keywords: \textit{post-quantum}, \textit{lattice}
+			\item Interest in post-quantum from my diploma thesis
+		\end{itemize}
+	}
 \end{frame}
 
-\begin{frame}[c] 
+\begin{frame}[c]
+	\frametitle{Results}
+	\large{
+		\begin{itemize}
+			\item Tested on Linux (Fedora)
+		\end{itemize}
+	}
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|l|c|r|r|}
+			\hline
+			Processor        & Participants & Sign [ms] & Verify [ms] \\
+			\hline
+			AMD Ryzen 5 3600 & 5            & 51.93     & 56.58       \\
+			AMD Ryzen 5 3600 & 10           & 103.07    & 108.70      \\
+			AMD Ryzen 5 3600 & 25           & 256.03    & 254.46      \\
+			Intel i7-10610U  & 5            & 57.59     & 60.78       \\
+			Intel i7-10610U  & 10           & 110.28    & 110.02      \\
+			Intel i7-10610U  & 25           & 287.26    & 300.01      \\
+			\hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}[c]
 	\frametitle{\mbox{ }}
 	\begin{center}
 		{\Huge Thank you for your attention!}
