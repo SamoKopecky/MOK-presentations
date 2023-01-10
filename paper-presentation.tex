@@ -144,16 +144,28 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{About L2RS scheme}
+  \frametitle{L2RS properties}
   \large{
     \begin{itemize}
+			\item Resistant to quantum computers attacks
       \item Based on Bimodal Lattice Signature Scheme (BLISS)
       \item Relies on the \textbf{Ring-SIS} (Short Integer Solution) problem
-      \item It is secure in terms of \textbf{unforgeabillity}, \textbf{linkability}, \textbf{non-slanderability} 
-      \item It also achieves \textbf{unconditional anonymity}
     \end{itemize}
   }
 \end{frame}
+
+\begin{frame}
+  \frametitle{L2RS properties}
+  \large{
+    \begin{itemize}
+      \item \textbf{Unforgeability} -- An adversary can't forge a signature
+      \item \textbf{Linkability} -- Able to deceted wheter two signatures were created using the sk
+      \item \textbf{Non-slanderability} -- An adversary can't prove that two signatures are linked if they were signed with different sk's
+      \item \textbf{Unconditional anonymity} -- An adversary can't distinguish a signer's pk with unlimited computing resources
+    \end{itemize}
+  }
+\end{frame}
+
 
 \begin{frame}
   \frametitle{L2RS foundations}
@@ -180,6 +192,19 @@
       \item $s_5 = s_{5,0} + s_{5,1}x + s_{5,2}x^2 + \dots + s_{5,510}x^{510} + s_{5,511}x^{511}$
     \end{itemize}
   }
+\end{frame}
+
+\begin{frame}
+	\frametitle{L2RS algorithms}
+	\large{
+		\begin{itemize}
+			\item \textbf{\texttt{L2RS.Setup}} -- Produces the public parameters
+			\item \textbf{\texttt{L2RS.KeyGen}} -- Generate the key pair from the public parameter, generated \textit{uniformly and independently}
+			\item \textbf{\texttt{L2RS.SigGen}} -- Generate a signature from a private key, public keys and public parameters
+			\item \textbf{\texttt{L2RS.SigVer}} -- Verifies the signature using the public keys and public parameters
+			\item \textbf{\texttt{L2RS.SigLink}} -- Takes two signatures and checks whether they are linked
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
