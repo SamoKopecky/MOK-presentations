@@ -147,7 +147,7 @@
   \frametitle{L2RS properties}
   \large{
     \begin{itemize}
-			\item Resistant to quantum computers attacks
+      \item Resistant to quantum computers attacks
       \item Based on Bimodal Lattice Signature Scheme (BLISS)
       \item BLISS is an ancestor of Dilithium
       \item Relies on the \textbf{Ring-SIS} (Short Integer Solution) problem
@@ -174,7 +174,7 @@
     \begin{itemize}
       \item The main structure is a \textbf{ring} $R_q = \mathbb{Z}_q[X]/f(x)$
       \item The number $q$ is a prime number where $q=1\,\mathrm{mod}\,2n$ and $n=512$
-      \item \textbf{Private key} consists of $m-1$ rings (polynomials) where $f(x) = x^n - 1$ and coefficients modulo $q$ 
+      \item \textbf{Private key} consists of $m-1$ rings (polynomials) where $f(x) = x^n - 1$ and coefficients modulo $q$
       \item \textbf{The public key} consists of only one ring
       \item \textbf{2 Public parameters} are the same size as the private key
     \end{itemize}
@@ -196,16 +196,16 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{L2RS algorithms}
-	\large{
-		\begin{itemize}
-			\item \textbf{\texttt{L2RS.Setup}} -- Produces the public parameters
-			\item \textbf{\texttt{L2RS.KeyGen}} -- Generate the key pair from the public parameter, generated \textit{uniformly and independently}
-			\item \textbf{\texttt{L2RS.SigGen}} -- Generate a signature from a private key, public keys and public parameters
-			\item \textbf{\texttt{L2RS.SigVer}} -- Verifies the signature using the public keys and public parameters
-			\item \textbf{\texttt{L2RS.SigLink}} -- Takes two signatures and checks whether they are linked
-		\end{itemize}
-	}
+  \frametitle{L2RS algorithms}
+  \large{
+    \begin{itemize}
+      \item \textbf{\texttt{L2RS.Setup}} -- Produces the public parameters
+      \item \textbf{\texttt{L2RS.KeyGen}} -- Generate the key pair from the public parameter, generated \textit{uniformly and independently}
+      \item \textbf{\texttt{L2RS.SigGen}} -- Generate a signature from a private key, public keys and public parameters
+      \item \textbf{\texttt{L2RS.SigVer}} -- Verifies the signature using the public keys and public parameters
+      \item \textbf{\texttt{L2RS.SigLink}} -- Takes two signatures and checks whether they are linked
+    \end{itemize}
+  }
 \end{frame}
 
 \begin{frame}
@@ -251,6 +251,7 @@
       \item The authors successfully managed to create a secure post quantum ring signature scheme
       \item They propose a real use case in cryptocurrencies
       \item The L2RS scheme can be used in many areas not only cryptocurrencies as showcased in this paper
+      \item Key sizes are big, performance might be an issue
     \end{itemize}
   }
 \end{frame}
